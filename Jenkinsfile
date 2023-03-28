@@ -10,7 +10,7 @@ pipeline {
         }
         stage('build the code'){
             echo "building the code"
-            sh script: mvn clean package
+            sh script: 'mvn clean package'
         }
         stage('archiving the artifact and test'){
             echo "archiving the artifact"
