@@ -13,7 +13,7 @@ pipeline {
         stage('build the code'){
             steps {
             echo "building the code new change"
-            sh script: '/opt/apache-maven-3.9.1/bin/mvn clean package'
+            sh script: '/opt/apache-maven-3.9.3/bin/mvn clean package'
             }
         }
         stage('archiving the artifact and test'){
