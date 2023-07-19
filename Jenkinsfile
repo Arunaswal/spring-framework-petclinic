@@ -1,7 +1,6 @@
 pipeline {
     agent any
     options { timeout(time: 1, unit: 'HOURS') }
-    triggers { cron('0 * * * *') }
     stages {
        stage('get the code from git') {
          steps {
