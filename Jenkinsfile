@@ -19,7 +19,7 @@ pipeline {
         stage('archiving the artifact and test'){
             steps {
             echo "archiving the artifact"
-            junit testResults: '/target/surefire-report/*.xml'
+            junit testResults: '/target/surefire-reports/*.xml'
             }
         }
     }   
