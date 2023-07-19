@@ -7,7 +7,7 @@ pipeline {
          steps {
             echo "clone from git"
             git url: 'https://github.com/Arunaswal/spring-framework-petclinic.git',
-            branch: 'main'
+            branch: 'new-feature'
          }
         }
         stage('build the code'){
